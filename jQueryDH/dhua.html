@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery动画</title>
+	<script src="js/myjquery.js" ></script>
+	<script  src="js/dhua.js"></script>
+	<style type="text/css">
+	.wrap{width: 1000px;height: 100%;margin:0 auto;}
+	#box{width:99px;height:99px;background:red;margin-top:50px;display: none;}
+	#box1{width:99px;height:99px;background:green;margin-top:50px;display: none;}
+	#box2{width:99px;height:99px;background:blue;margin-top:50px;display: none;}
+
+	#pro{width:99px;height:99px;background:green;margin-top:50px;}
+	#pro1{width:99px;height:99px;background:blue;margin-top:50px;}
+	#pro2{width:99px;height:99px;background:red;margin-top:50px;}
+
+	#wrap{width:99px;height:99px;background:green;margin-top:50px;}
+	#wrap1{width:99px;height:99px;background:red;margin-top:50px;}
+	#wrap2{width:99px;height:99px;background:blue;margin-top:50px;}
+
+	#logo{width:99px;height:99px;background:#ccc;margin-top:50px}
+	#logo1{width:99px;height:99px;background:#ccc;margin-top:50px}
+	#logo2{width:99px;height:99px;background:#ccc;margin-top:50px}
+
+	div#panel,div#flip{padding:5px;text-align: center;background: #e5eecc;border:1px dotted red;width:500px;}
+	#panel{height: 150px;display: none;}
+
+	div.panel,div.flip{margin:0px;padding:5px;text-align: center;background: aqua;border:1px dotted red;width:500px;}
+	.panel{height: 150px;}
+
+	div#pane,div.flipa{margin:0px;padding:5px;text-align: center;background: #ccc;border:1px dotted red;width:500px;}
+	#pane{height: 150px;display: none;}
+
+	div.map,div.btnA{margin:0px;padding:5px;text-align: center;background: green;border:1px dotted red;width:500px;}
+	.map{height: 150px;display: none;}
+
+	#float{background: #000;height: 200px;width: 500px;color: #fff;position:absolute;text-align: center;border-radius: 150px;}
+	
+	.id{margin-top: 300px}
+	#icon{background: red;height: 300px;width: 300px;color: #fff;position:absolute;text-align: center;}
+
+	.animate{margin-top: 500px;}
+	#toggle{background: #f60;height: 300px;width: 300px;color: #fff;position:absolute;text-align: center;}
+
+	.absolute{margin-top: 330px;}
+	#hot{background: #f60;height: 100px;width: 100px;color: #fff;position:absolute;text-align: center;border-radius: 50px}
+
+	.relative{margin-top: 300px;}
+	#title{background: #f60;height: 300px;width: 300px;color: #fff;position:absolute;text-align: center;}
+
+	.fixed{margin-top: 400px;}
+	#thead{background: #f60;height: 300px;width: 300px;color: #fff;position:absolute;text-align: center;border-radius: 50px;}
+
+	div.panelf,div#banner{margin:0px;padding:5px;text-align: center;background: green;border:1px dotted red;width:500px;}
+	#banner{padding:50px;display: none;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+	<div id="red">
+	<button ytpe="button" class="btn">按钮</button>
+	<p>wwwwwwwwwwwwwwwww</p>
+	<p>wwwwwwwwwwwwwwwww</p>
+	<p>jquery css 选择器</p>
+	</div><br/><br/><br/>
+	
+	<button class="btn1" type="button">淡入事件</button>
+	<div id="box"></div>
+	<div id="box1"></div>
+	<div id="box2"></div>
+	<br/><br/><br/>
+	
+	<button class="btn2" type="button">淡出事件</button>
+	<div id="pro"></div>
+	<div id="pro1"></div>
+	<div id="pro2"></div>
+	<br/><br/><br/>
+	
+	<div id="wrap"></div>
+	<div id="wrap1"></div>
+	<div id="wrap2"></div>
+	<button class="btn3" type="button">淡入/淡出 事件</button><br/><br/><br/>
+
+	<div id="logo"></div>
+	<div id="logo1"></div>
+	<div id="logo2"></div>
+	<button class="btn4" type="button">淡出不透明度</button><br/><br/><br/>
+	
+	<div id="panel">
+		<p>第一个id是方框/控制框</p>
+		<p>第二个id是开关</p>
+		<p>本例演示向下滑动事件</p>
+	</div>
+	<div id="flip">下滑动开关</div><br/><br/>
+
+	<div class="panel">
+		<p>第一个class是方框/控制框</p>
+		<p>第二个class是开关</p>
+		<p>本例演示向上滑动事件</p>
+	</div>
+	<div class="flip">上滑动开关</div><br/><br/>
+
+	<div id="pane">
+		<p>第一个id是方框/控制框</p>
+		<p>第二个id是开关</p>
+		<p>本例演示滑动事件</p>
+	</div>
+	<div class="flipa">上下滑动开关</div><br/><br/>
+
+	<div class="btnA">实例开关</div>
+	<div class="map">
+		<p>开关在上实例演示</p>
+		<p>开关在上实例演示</p>
+		<p>开关在上实例演示</p>
+	</div><br/><br/>
+	
+	<div>
+	<button class="btnb" type="button">动画开关</button>
+	<p id="float">动画制作</p></div><br/>
+	
+	<div class="id">
+	<button class="btnc" type="button">动画开关A</button>
+	<p id="icon">动画制作</p></div><br/><br/>
+
+	<div class="animate">
+	<button class="btnd" type="button">动画开关</button>
+	<p id="toggle">动画制作</p>		
+	</div><br/>
+
+	<div class="absolute">
+		<button class="btne" type="button">动画开关</button>
+		<p id="hot">热点<br/>无限增加 高 宽</p>
+	</div>
+	
+	<div class="relative">
+		<button class="btnf" type="button">动画开关</button>
+		<p id="title">向左移动改变高宽并显示不透明度</p>
+	</div><br/><br/>
+
+	<div class="fixed">
+		<button class="btng" type="button">动画开关</button>
+		<p id="thead">向左移动</p>
+	</div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+	
+		<button class="stop" type="button">停止开关</button>
+		<div class="panelf">滑动面板</div>
+		<div id="banner">
+			<p>停止滑动</p>
+			<p>停止滑动</p>
+			<p>停止滑动</p>
+		</div><br/><br/><br/><br/>
+
+		<p id="file">jQuery  乐趣十足</p>
+		<button class="btn6" type="button">点击</button><br/><br/><br/>
+
+		<button class="btn7">警告</button>
+		<p id="txt">演示警告案例</p>
+</div>
+</body>
+</html>

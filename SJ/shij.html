@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>事件操作</title>
+	<script src="js/myjquery.js" ></script>
+	<script src="js/shij.js"></script>
+	<script src="js/jquery-migrate-1.4.1.js"></script>
+	<script src="js/jquery-migrate-3.0.0.js"></script>
+	<link rel="stylesheet" href="css/shij.css" type="text/css">
+</head>
+<body>
+	<div class="worp">
+		<div class="one">
+			<em>bind() 方法为被选元素添加一个或多个事件处理程序，并规定事件发生时运行的函数</em><br/><br/>
+
+			<em>规定向被选元素添加的一个或多个事件处理程序，以及当事件发生时运行的函数。</em><br/><br/>
+
+			<p>PPPPPPPPPPPPPP</p>
+			<p>PPPPPPPPPPPPPP</p>
+			<p>PPPPPPPPPPPPPP</p>
+			<button class="btn1" type="button">Button</button>
+		</div><br/><br/>
+
+		<div class="two">
+			<em>当元素失去焦点时发生 blur 事件。</em><br/><br/>
+
+			<em>blur() 函数触发 blur 事件，或者如果设置了 function 参数，该函数也可规定当发生 blur 事件时执行的代码</em><br/><br/>
+
+			<em>在新浏览器中，该事件可用于任何元素</em><br/><br/>
+
+			your name: <input type="text" />
+			<p>在上面的输入域中点击，使其获得焦点，然后在输入域外面点击，使其失去焦点。</p>
+		</div><br/><br/>
+
+		<div class="three">
+			<em>当元素的值发生改变时，会发生 change 事件</em><br/><br/>
+
+			<em>该事件仅适用于文本域（text field），以及 textarea 和 select 元素</em><br/><br/>
+
+			<em>change() 函数触发 change 事件，或规定当发生 change 事件时运行的函数</em><br/><br/>
+
+			<em>当用于 select 元素时，change 事件会在选择某个选项时发生。当用于 text field 或 text area 时，该事件会在元素失去焦点时发生</em><br/><br/>
+
+			<p>在某个域被使用或改变时，它会改变颜色。</p>
+			Name: <input type="text" class="top" /><br/><br/>
+			<p>Car:
+				<select name="car" class="top">
+					<option value="volvo">volvo</option>
+					<option value="volvo2">volvo2</option>
+					<option value="volvo3">volvo3</option>
+					<option value="volvo4">volvo4</option>
+					<option value="volvo5">volvo5</option>
+					<option value="volvo6">volvo6</option>
+				</select>
+			</p>
+		</div><br/><br/>
+
+		<div class="four">
+			<em>当点击元素时，会发生 click 事件。</em><br/><br/>
+			<em>当鼠标指针停留在元素上方，然后按下并松开鼠标左键时，就会发生一次 click</em><br/><br/>
+			<em>click() 方法触发 click 事件，或规定当发生 click 事件时运行的函数</em><br/><br/>
+			<p>AAAAAAAAAAAAAAAAAAAAA</p>
+			<p>AAAAAAAAAAAAAAAAAAAAA</p>
+			<p>AAAAAAAAAAAAAAAAAAAAA</p>
+			<button class="btn2" type="button">切换键</button>
+		</div><br/><br/>
+
+		<div class="five">
+			<em>当双击元素时，会发生 dblclick 事件</em><br/><br/>
+			<em>当鼠标指针停留在元素上方，然后按下并松开鼠标左键时，就会发生一次 click</em><br/><br/>
+			<em>在很短的时间内发生两次 click，即是一次 double click 事件</em><br/><br/>
+			<em>dblclick() 方法触发 dblclick 事件，或规定当发生 dblclick 事件时运行的函数</em><br/><br/>
+			<em>如果把 dblclick 和 click 事件应用于同一元素，可能会产生问题</em><br/><br/>
+			<p>BBBBBBBBBBBBBBBBBBB</p>
+			<p>BBBBBBBBBBBBBBBBBBB</p>
+			<p>BBBBBBBBBBBBBBBBBBB</p>
+			<button class="btn3" type="button">双击键</button>
+		</div><br/><br/>
+
+		<div class="six">
+			<em>delegate() 方法为指定的元素（属于被选元素的子元素）添加一个或多个事件处理程序，并规定当这些事件发生时运行的函数</em><br/><br/>
+			<em>使用 delegate() 方法的事件处理程序适用于当前或未来的元素（比如由脚本创建的新元素）</em><br/><br/>
+			
+			<p>DDDDDDDDDDDDDDDDD</p>
+			<p>DDDDDDDDDDDDDDDDD</p>
+			<p>DDDDDDDDDDDDDDDDD</p>
+			<button class="btn4" type="button">Button</button>
+		</div><br/><br/>
+
+		<div class="seven">
+			<em>pageX() 属性是鼠标指针的位置，相对于文档的左边缘。</em><br/>
+			<em>pageY() 属性是鼠标指针的位置，相对于文档的上边缘。</em>
+			<p>鼠标指针位于: <span></span></p>
+		</div><br/><br/>
+
+		<div class="eight">
+			<em>result 属性包含由被指定事件触发的事件处理器返回的最后一个值，除非这个值未定义。</em>
+			<p>QQQQQQQQQQQQQQQQQ</p>
+			<p>QQQQQQQQQQQQQQQQQ</p>
+			<p>QQQQQQQQQQQQQQQQQ</p>
+			<button class="btn5">Button</button>
+		</div><br/><br/>
+
+		<div class="nine">
+			<em>target 属性规定哪个 DOM 元素触发了该事件</em>
+			<h1>HHHHHHHHHHHHHH</h1>
+			<h4>LLLLLLLLLLLLLL</h4>
+			<p>OOOOOOOOOOOOOO</p>
+			<button class="btn6">Button</button>
+		</div><br/><br/>
+
+		<div class="ten">
+			<em>完整的 key press 过程分为两个部分：1. 按键被按下；2. 按键被松开。</em><br/>
+			<em>当按钮被按下时，发生 keydown 事件。</em><br/>
+			<em>keydown() 方法触发 keydown 事件，或规定当发生 keydown 事件时运行的函数</em><br/>
+			Name: <input type="text" />
+			<p>当发生 keydown 和 keyup 事件时，输入域会改变颜色。请试着在其中输入内容。</p>
+		</div><br/><br/>
+
+		<div class="one-a">
+			<em>当鼠标指针穿过元素时，会发生 mouseenter 事件。</em><br/>
+			<em>该事件大多数时候会与 mouseleave 事件一起使用。</em><br/>
+			<em>mouseenter() 方法触发 mouseenter 事件，或规定当发生 mouseenter 事件时运行的函数</em><br/><br/>
+			<p>请把鼠标指针移动到这个段落上</p>
+		</div><br/><br/>
+
+		<div class="one-b">
+			<em>当鼠标指针位于元素上方时，会发生 mouseover 事件</em><br/>
+			<em>该事件大多数时候会与 mouseout 事件一起使用</em><br/>
+			<em>mouseover() 方法触发 mouseover 事件，或规定当发生 mouseover 事件时运行的函数</em><br/><br/>
+			<p>请把鼠标指针移动到这个段落上</p>
+		</div><br/><br/>
+
+		<div class="one-c">
+			<em>one() 方法为被选元素附加一个或多个事件处理程序，并规定当事件发生时运行的函数</em><br/>
+			<em>当使用 one() 方法时，每个元素只能运行一次事件处理器函数</em><br/><br/>
+			<p>XXXXXXXXXXX</p><br/>
+			<p>XXXXXXXXXXX</p>
+		</div><br/><br/>
+
+		<div class="one-d">
+			<em>当提交表单时，会发生 submit 事件。</em><br/>
+			<em>该事件只适用于表单元素。</em><br/>
+			<em>submit() 方法触发 submit 事件，或规定当发生 submit 事件时运行的函数</em><br/><br/>
+			<form action="" class="thead">
+
+			First Name: <input type="text" name="FirstName" value="wangrui" size="22"><br/><br/>
+
+			Last Name: <input type="text" name="LastName" value="wangxiuyu" size="22"><br/><br/>
+
+			<input type="submit" value="Submit">
+			</form>
+		</div><br/><br/>
+
+		<div class="one-e">
+			<em>toggle() 方法用于绑定两个或多个事件处理器函数，以响应被选元素的轮流的 click 事件</em><br/>
+			<em>该方法也可用于切换被选元素的 hide() 与 show() 方法</em><br/>
+			<em>当指定元素被点击时，在两个或多个函数之间轮流切换</em><br/>
+			<button class="btn7">Button</button>
+		</div><br/><br/>
+
+		<div class="one-f">
+			<em>trigger() 方法触发被选元素的指定事件类型</em><br/>
+			<em>规定被选元素要触发的事件</em><br/>
+			<input type="text" name="firstname" value="hello" /><br/><br/>
+			<button class="btna">Button</button>
+		</div><br/><br/>
+
+		<div class="one-g">
+			<em>当用户离开页面时，会发生 unload 事件</em><br/>
+			<em>当发生以下情况时，会发出 unload 事件</em><br/><br/>
+			
+				<li>点击某个离开页面的链接</li>
+				<li>在地址栏中键入了新的 URL</li>
+				<li>使用前进或后退按钮</li>
+				<li>关闭浏览器</li>
+				<li>重新加载页面</li><br/>
+
+			<em>unload() 方法将事件处理程序绑定到 unload 事件</em><br/>
+			<em>unload() 方法只应用于 window 对象</em><br/><br/>
+			<p>当您点击 <a href="http://w3school.com.cn">这个链接</a> 时，或者关闭窗口，会触发一个警告框</p>
+		</div>
+
+	</div>
+	</body>
+</html>

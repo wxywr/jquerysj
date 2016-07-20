@@ -1,0 +1,8 @@
+*{margin:0;padding:0;}
+*{font-size: 50px;color: #444;}
+em{color: #0f0;}
+.worp{width: 1200px;margin:0 auto;border:1px dotted #000;}
+
+.one-e{width: 1200px;height: 400px;margin:0 auto;background: #cf6;text-align: justify;}
+
+.one-g a{display: inline-block;color: blue;}

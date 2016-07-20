@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文档操作</title>
+	<link rel="stylesheet" href="css/wd.css" type="text/css" >
+	<script src="js/myjquery.js" ></script>
+	<script src="js/wd.js" ></script>
+	
+</head>
+<body>
+	<div class="worp">
+
+		<div class="one-a">
+			<em>addClass() 方法向被选元素添加一个或多个类</em><br/><br/>
+			<em>该方法不会移除已存在的 class 属性，仅仅添加一个或多个 class 属性。</em><br/><br/>
+			<em>如需添加多个类，请使用空格分隔类名</em><br/><br/>
+			<div class="one-a1">
+				<h2>1  AAAAAAAAAAAAA</h2><br/>
+				<p>BBBBBBBBBBBBB</p><br/>
+				<p>BBBBBBBBBBBBB</p><br/>
+				<button class="btn1">Button</button>
+			</div><br/><br/>
+			<div class="one-a2">
+				<h2>2  AAAAAAAAAAAAA</h2><br/>
+				<p>BBBBBBBBBBBBB</p><br/>
+				<p>BBBBBBBBBBBBB</p><br/>
+				<button class="btn2">Button</button>
+			</div><br/><br/>
+			<div class="one-a3">
+				<h2>3  AAAAAAAAAAAAA</h2><br/>
+				<p>BBBBBBBBBBBBB</p><br/>
+				<p>BBBBBBBBBBBBB</p><br/>
+				<button class="btn3">Button</button>
+			</div><br/><br/>
+			<div class="one-a4">
+				<h2>4  AAAAAAAAAAAAA</h2><br/>
+				<p>BBBBBBBBBBBBB</p><br/>
+				<p>BBBBBBBBBBBBB</p><br/>
+				<button class="btn4">Button</button>
+			</div>
+		</div><br/><br/>
+
+		<div class="one-b">
+			<div class="one-b1">
+				<em>after() 方法在被选元素后插入指定的内容</em><br/>
+				<p>1  BBBBBBBBBBBBB</p>
+				<p>在每个 p 元素后插入内容</p>
+				<button class="btn5">Button</button>
+			</div><br/><br/>
+			<div class="one-b2">
+			<em>使用函数在被选元素之后插入指定的内容</em><br/>
+				<h2>2  AAAAAAAAAAAAA</h2><br/>
+				<p>在每个 p 元素后插入内容</p>
+				<button class="btn6">Button</button>
+				<h2>before() 方法在被选元素前插入指定的内容。方法同上。实例在jQuery文档操作查找</h2>
+			</div>
+		</div><br/><br/>
+
+		<div class="one-c">
+			<em>append() 方法在被选元素的结尾（仍然在内部）插入指定内容</em><br/><br/>
+			<em>append() 和 appendTo() 方法执行的任务相同。不同之处在于：内容的位置和选择器</em><br/><br/>
+			<h2> AAAAAAAAAAAAA</h2><br/>
+			<p>BBBBBBBBBBBBB</p>
+			<p>使用函数在指定元素的结尾插入内容  同one-b2一样</p>
+			<button class="btn7">Button</button>
+		</div><br/><br/>
+
+		<div class="one-d">
+			<em>appendTo() 方法在被选元素的结尾（仍然在内部）插入指定内容。</em><br/><br/>
+			<em>append() 和 appendTo() 方法执行的任务相同。不同之处在于：内容和选择器的位置，以及 append() 能够使用函数来附加内容。</em><br/><br/>
+			<h2>AAAAAAAAAAAAA</h2><br/>
+			<p>BBBBBBBBBBBBB</p>
+			<p>BBBBBBBBBBBBB</p>
+			<button class="btn8">Button</button>
+		</div><br/><br/>
+
+		<div class="one-e">
+			<div class="one-e1">
+			<em>clone() 方法生成被选元素的副本，包含子节点、文本和属性</em><br/><br/>
+			<p>复制每个 p 元素，然后追加到 body 元素</p>
+			<button class="btn9">Button</button>
+			</div><br/><br/>
+
+			<div class="one-e2">
+				<em></em><br/><br/>
+				<p>复制每个 p 元素，然后追加到 body 元素</p>
+				<p>点击本段落可以增加文本的大小。事件处理器同样被复制到新的段落</p>
+			<button class="btn10">Button</button>
+			</div>
+		</div><br/><br/>
+
+		<div class="one-f">
+			<em>detach() 方法移除被选元素，包括所有文本和子节点。</em><br/><br/>
+			<em>这个方法会保留 jQuery 对象中的匹配的元素，因而可以在将来再使用这些匹配的元素</em><br/><br/>
+			<em>detach() 会保留所有绑定的事件、附加的数据，这一点与 remove() 不同</em><br/><br/>
+			<em>使用 detach() 方法来移动元素。实例在jQuery文档操作查找</em><br/><br/>
+			<em>使用 detach() 方法来删除并恢复一个元素。实例在jQuery文档操作查找</em><br/><br/>
+			<em>使用 detach() 方法来移动元素，并保留元素的 jQuery 数据。实例在jQuery文档操作查找</em><br/><br/>
+
+			<p>BBBBBBBBBBBBB</p>
+			<p>删除 p 元素</p>
+			<button class="btn11">Button</button>
+		</div><br/><br/>
+
+		<div class="one-g">
+			<em>empty() 方法从被选元素移除所有内容，包括所有文本和子节点</em><br/><br/>
+			<em>使用 empty() 方法从元素移除内容。</em><br/><br/>
+			<p>BBBBBBBBBBBBB</p><br/>
+			<p>BBBBBBBBBBBBB</p><br/>
+			<button class="btn12">Button</button>
+		</div><br/><br/>
+
+		<div class="one-h">
+			<em>hasClass() 方法检查被选元素是否包含指定的 class。</em><br/><br/>
+			<em>html() 方法返回或设置被选元素的内容 (inner HTML)。</em><br/><br/>
+			<em>如果该方法未设置参数，则返回被选元素的当前内容</em><br/><br/>
+			<em>当使用该方法返回一个值时，它会返回第一个匹配元素的内容</em><br/><br/>
+			<em>当使用该方法设置一个值时，它会覆盖所有匹配元素的内容</em><br/><br/>
+			<em>使用函数来设置所有匹配元素的内容</em><br/><br/>
+			<em>实例在jQuery文档操作查找</em><br/><br/>
+		
+		</div><br/><br/>
+
+		<div class="one-i">
+			<em>insertAfter() 方法在被选元素之后插入 HTML 标记或已有的元素</em><br/><br/>
+			<em>如果该方法用于已有元素，这些元素会被从当前位置移走，然后被添加到被选元素之后</em><br/><br/>
+			<em>如何使用 insertAfter() 方法在每个被选元素之后插入已存在的元素。实例在jQuery文档操作查找</em><br/><br/>
+			<p>BBBBBBBBBBBBB</p><br/>
+			<p>在每个 p 元素之后插入 span 元素</p><br/>
+			<button class="btn13">Button</button>
+			<h2>insertBefore() 方法在被选元素之前插入 HTML 标记或已有的元素</h2>
+			<h3>如果该方法用于已有元素，这些元素会被从当前位置移走，然后被添加到被选元素之前</h3>
+			<h3>如何使用 insertAfter() 方法在每个被选元素之前插入已存在的元素。实例同上</h3>
+		</div><br/><br/>
+
+		<div class="one-j">
+			<em>prepend() 方法在被选元素的开头（仍位于内部）插入指定内容</em><br/><br/>
+			<em>prepend() 和 prependTo() <b>方法作用相同</b> <span>差异在于语法：内容和选择器的位置，以及 prependTo() 无法使用函数来插入内容</span></em><br/><br/>
+		
+			<p>BBBBBBBBBBBBB</p><br/>
+			<p>BBBBBBBBBBBBB</p><br/>
+			<button class="btn14">在每个 p 元素的开头插入内容</button>
+		</div><br/><br/>
+
+		<div class="one-k">
+			<em>removeAttr() 方法从被选元素中移除属性。</em><br/><br/>
+			<h1>这是一个标题</h1>
+         	<p>这是一个段落。</p>
+			<p style="font-size:120%;color:blue;">这是另一个段落。</p>
+			<button class="btn15">删除所有 p 元素的 style 属性</button><br/><br/>
+			<em>removeClass() 方法从被选元素移除一个或多个类</em><br/>
+			<em>如果没有规定参数，则该方法将从被选元素中删除所有类</em>
+		</div><br/><br/>
+
+		<div class="one-l">
+			<em>replaceAll() 方法用指定的 HTML 内容或元素替换被选元素。</em><br/><br/>
+			<em>replaceAll() 与 replaceWith() 作用相同。差异在于语法：内容和选择器的位置，以及 replaceWith() 能够使用函数进行替换。</em><br/><br/>
+			<em>使用 document.createElement() 来创建一个新的 DOM 元素，然后用它替换被选元素。</em><br/><br/>
+
+			<p>This is a paragraph.</p>
+			<p>This is another paragraph.</p>
+			<button class="btn16">用粗体文本替换所有段落</button>
+		</div><br/><br/>
+
+		<div class="one-m">
+			<em>text() 方法方法设置或返回被选元素的文本内容</em><br/><br/>
+			<em>返回文本内容::当该方法用于返回一个值时，它会返回所有匹配元素的组合的文本内容（会删除 HTML 标记）</em><br/><br/>
+			<em>设置文本内容::当该方法用于设置值时，它会覆盖被选元素的所有内容。</em><br/><br/>
+			<p>This is a paragraph.</p>
+			<p>This is another paragraph.</p>
+			<button class="btn17">改变所有 p 元素的文本内容</button>
+		</div><br/><br/>
+
+		<div class="one-n">
+			<em>toggleClass() 对设置或移除被选元素的一个或多个类进行切换	</em><br/><br/>
+			<em>该方法检查每个元素中指定的类。如果不存在则添加类，如果已设置则删除之。这就是所谓的切换效果</em><br/><br/>
+			<h2>AAAAAAAAAAAAAAAAAAA</h2>
+			<p>This is a paragraph.</p>
+			<p>This is another paragraph.</p>
+			<button class="btn18">切换段落的"main"类</button>
+		</div><br/><br/>
+
+		<div class="one-o">
+			<em>unwrap() 方法删除被选元素的父元素。</em><br/><br/>
+			<em>对包裹和解开元素的任务进行切换。</em><br/><br/>
+			<em>实例在jQuery文档操作查找</em><br/><br/>
+			<ul>
+			<p>这是 div 元素中的段落。</p>
+			</ul><br/>
+			<ol>
+			<p>这是 article 元素中的段落。</p>
+			</ol><br/>
+			<button class="btn19">删除每个 p 元素的父元素</button>
+		</div><br/><br/>
+
+		<div class="one-p">
+			<em>wrap() 方法把每个被选元素放置在指定的 HTML 内容或元素中</em><br/><br/>
+			<em>对包裹和解开元素的任务进行切换。实例在jQuery文档操作查找</em><br/><br/>
+			<em>创建一个新的 DOM 元素来包裹每个被选元素。实例在jQuery文档操作查找</em><br/><br/>
+			<table>
+			<p>This is a paragraph.</p><br/>
+			<p>This is another paragraph.</p><br/>
+			<button class="btn01">用 table 包裹每个段落</button>
+			</table>
+		</div><br/><br/>
+
+		<div class="one-q">
+			<em>wrapAll() 在指定的 HTML 内容或元素中放置所有被选的元素。</em><br/><br/>
+			<em>创建一个新的 DOM 元素来包裹每个被选元素。实例在jQuery文档操作查找</em><br/><br/>
+			<tr>
+			<p>This is a paragraph.</p>
+			<p>This is another paragraph.</p>
+			</tr><br/>
+			<button class="btn02">用一个 li 包裹所有段落</button><br/>
+			<em>wrapInner() 方法使用指定的 HTML 内容或元素，来包裹每个被选元素中的所有内容 (inner HTML)。实例在jQuery文档操作查找</em><br/><br/>
+		</div><br/><br/>
+
+		<div class="one-r">
+			<em>jQuery 文档操作 - text() 方法</em><br/><br/>
+			<em>jQuery 文档操作 - replaceWith() 方法</em><br/><br/>
+			<em>jQuery 属性操作 - removeClass() 方法</em><br/><br/>
+		
+			<em>jQuery 属性操作 - hasClass() 方法</em><br/><br/>
+			<em>jQuery 文档操作 - html() 方法</em><br/><br/>
+			<em></em><br/><br/>
+		</div><br/><br/>
+	</div>
+	
+</body>
+</html>

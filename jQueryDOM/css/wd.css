@@ -1,0 +1,28 @@
+*{margin:0;padding:0;}
+*{font-size: 50px;}
+em{color: #3f0;}
+p{font-size: 40px;}
+.worp{width: 1200px;background:#f0f0f0;margin:0 auto;}
+
+.title{font-size: 70px;color: blue;}
+.color{background: #3f0;}
+
+.target{color: #f60;font-size: 30px;}
+
+.aa_0{color: #3f6;font-size: 70px;}
+.aa_1{color: blue;font-size: 40px;}
+
+.one-g{width: 1200px;height: 460px;background: aqua;}
+
+.one-j b{color: blue;text-decoration: underline;}
+
+.one-j span{color: red;}
+
+.mina{font-size: 70px; color: red;}
+
+ul{background: yellow;}
+ol{background:#f60;}
+
+table{background: yellow;}
+
+tr{background: aqua;}
